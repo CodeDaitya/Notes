@@ -8,10 +8,23 @@ the sharing of the file becomes very convenient allowing better collaboration wi
 A Version Control System handles all the requirements of Version Control. It has the capability of handling all the changes
 coming from different sources and maintain the integrity of the data stored in the seperate database.
 
+### Commit/Check-in
+When a work file is ready to be added or updated in the main project storage, the user can to a _commit_ or _check-in_ and update
+the project with latest version of files. Only after this step can a new update be added to the seperate VCS databse. Any file that
+hasn't been commited can't be uploaded into the VMS database.
+
 ### Reverting Changes
-The changes one make to a local database can be reverted. 
+The changes one make to a local database can be reverted. Any addition can be removed by simple revert procedure that different VCS provide.
+The additions are stored in a _structure_ and can be removed from it's latest pointer position. Commits can be undone as well. Nothing in a 
+VMS is ever deleted. What the user has deleted in their own work directory and database is stillpresent in the repository history and can be
+retrieved back from there. VCSs provide a mechanism to accomplish this crucial function.
 
 ### Branching
 This feature allows creating a seperate branch of the work directory and make any experinmental changes on this new branch without
 effecting the current version of the work files. It's possible to work on different branches and once the new branch is in a desirabel state
 it can be merged with the main branch, thereby creating a new version of the project.
+
+### Push
+Once it has been determined that the changes made are to preserved and are going to be a part of the project, the changes are pushed to the VCS
+database to it's respective repsitory on the system. Only the changes that have been committed to in the local workspace can be pushed onto the VCS.
+
