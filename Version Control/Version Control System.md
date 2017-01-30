@@ -13,15 +13,19 @@ When a work file is ready to be added or updated in the main project storage, th
 the project with latest version of files. Only after this step can a new update be added to the seperate VCS databse. Any file that
 hasn't been commited can't be uploaded into the VMS database.
 
+### Staging
+The work files, or any changes to the work file, before being commited to the local repository has to be staged. This means that the latest 
+addition/modification has been determined to be the one preferable over the one present already in the repository.
+
 ### Reverting Changes
-The changes one make to a local database can be reverted. Any addition can be removed by simple revert procedure that different VCS provide.
-The additions are stored in a _structure_ and can be removed from it's latest pointer position. Commits can be undone as well. Nothing in a 
-VMS is ever deleted. What the user has deleted in their own work directory and database is stillpresent in the repository history and can be
-retrieved back from there. VCSs provide a mechanism to accomplish this crucial function.
+The changes one makes to a local database can be reverted. Any addition can be removed by simple revert procedure that different VCSs provide.
+The additions are stored in a _structure_ and can be removed from it's latest pointer position. Staged files and changes can be unstaged. 
+Commits can be undone as well. Nothing in a VCS is ever deleted. What the user has deleted in their own work directory and database is still present
+in the repository history and can be retrieved back from there. VCSs provide a mechanism to accomplish this crucial function.
 
 ### Branching
 This feature allows creating a seperate branch of the work directory and make any experinmental changes on this new branch without
-effecting the current version of the work files. It's possible to work on different branches and once the new branch is in a desirabel state
+effecting the current version of the work files. It's possible to work on different branches and once the new branch is in a desirable state,
 it can be merged with the main branch, thereby creating a new version of the project.
 
 ### Push
